@@ -2,12 +2,14 @@
 
 <img src="https://media.giphy.com/media/CyB3xQXDbdGda/giphy.gif" width=400>
 
-Your objective is to build a "text adventure" game in ruby that can be run from the command line.
+Your objective is to build a "Choose Your Own Adventure" style, command line game, or "Text Adventure".
+
+#### What's a Text Adventure?
+* [Choose Your Own Adventure](http://samizdat.cc/cyoa/)
+* [Interactive Fiction](https://en.wikipedia.org/wiki/Interactive_fiction)
 
 #### What's a REPL?
-We've built out some examples for reading and evaluating user input from _standard in_, and writing to _standard out_. This is known as a REPL ("Read Evaluate Print Loop"). Your goal is to turn our example code into a fabulous game!
-
-The Chrome Javascript Console is an example of a "REPL".
+We've built out some examples of how you can read user input from _standard in_, evaluate it, and then write to _standard out_. This is known as a REPL ("Read Evaluate Print Loop").
 
 When you type:
 
@@ -30,6 +32,8 @@ irb
 ```
 
 The REPL is a great place to test code and explore a programming language!
+
+Your goal is to turn our example REPL code into a fabulous adventure game!
 
 ## Game Setup
 We're going to build a game that uses a looping prompt to evaluate user input. Your user interface will be the command line. Your user will navigate the game by typing commands. It's up to you to tell a story and keep track of gameplay!
@@ -54,27 +58,32 @@ ruby example.rb
 * How do you quit the game?
 
 #### Objective
-Your goal is to build a text adventure, using the supplied code as a starting point.
+Your goal is to build a ruby text adventure, using the supplied code as a starting point. We've given you two implementations of the adventure, one in javascript (`node_adventure.js`) and one in ruby (`ruby_adventure.rb`), so that you can compare the languages!
+
+```bash
+node node_adventure.js
+# or
+ruby ruby_adventure.js
+```
 
 ```
-You walk into General Assembly, San Francisco on your first day of WDI 25. A nice person is sitting at the front desk. A sign says "How can I help you?". You can go left or right.
-> Talk to the nice person
-Hello, how can I help you?
-> Where is WDI 25 meeting?
-WDI 25 meets in classroom 8.
-> Where is classroom 8?
-Down the hall to your right.
-> Go right
-```
-   
-``` 
-You wake up in a dark room surrounded by computer hardware and glowing monitors. A green message is written across the screen. It says: "wake up, neo".
-The cursor blinks on the screen, ready for your input.
-> hello?
+You walk into GA on your first day of WDI 25. Celso is sitting at the Front Desk.
+1) Talk to Celso
+3) Go home
+~> 1
+-----------
+Hi, it must be your first day of class! You'll be meeting in classroom 8.
+2) Go to classroom 8
+3) Go home
+~> 2
+-----------
+Class is canceled!
+3) Go home
+~> 3
 ```
 
 ####Bonuses
-- We challenge you to implement the "Number guessing game" at some point in your game. Respond with "too high", "too low", or "correct".
+- We challenge you to implement the "Number guessing game" using the REPL. Respond with "too high", "too low", or "correct".
 - Can you keep track of inventory?
 - Can you create a "hint" or "help" command?
 - Can you create a "start over" command?
