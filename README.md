@@ -83,13 +83,18 @@ Class is canceled!
 ```
 
 ####Bonuses
-- We challenge you to implement the "Number guessing game" using the REPL. Respond with "too high", "too low", or "correct".
-- Can you keep track of inventory?
+We want you to push your programming skills to the limit. Here are some ideas to keep you chugging along:
+
+- Can you create a "start over" or a "Go back" command?
 - Can you create a "hint" or "help" command?
-- Can you create a "start over" command?
+- Can you keep track of inventory?
+    - Can you use inventory to solve puzzles?
+- REPL challenges:
+    - Can you build the Number Guessing Game. Pick a random number and then respond with "too high", "too low", or "correct".
+    - Can you build an [Eliza chatbot](https://en.wikipedia.org/wiki/ELIZA) clone - [demo here](http://manifestation.com/neurotoys/eliza.php3/)
 - Can you setup your game so that you can configure your player from the command line (hint: lookup `ARGV` or `process.argv`):
 
     ```bash
-    ruby my_text_adventure.rb George
-    # Hi, George, welcome to my text adventure
+    ruby my_text_adventure.rb George Male 35
+    # Hi, George! Welcome to my text adventure...
     ```
